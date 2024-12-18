@@ -8,19 +8,21 @@ import Testimonials from '../Components/Home/Testimonials'
 import ContactBanner from '../Components/Home/ContactBanner'
 import Footer from '../Components/Home/Footer'
 import Navbar from '../Components/Home/Navbar'
+import UpperNavbar from '../Components/Helper/UpperNavbar'
 
 const Home = () => {
     return (
         <>
-        <Navbar/>
+            {/* <UpperNavbar /> */}
+            <Navbar />
             <Hero />
             <CounsellingSection />
             <WhyUsSection />
             <NewsSection />
             <Stats />
             <Testimonials />
-            <ContactBanner/>
-            <Footer/>
+            <ContactBanner />
+            <Footer />
         </>
     )
 }
