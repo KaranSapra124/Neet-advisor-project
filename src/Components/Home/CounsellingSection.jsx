@@ -59,9 +59,9 @@ const CounsellingSection = () => {
 
     return (
         <>
-            <div className='bg-gray-200 bg-fixed   p-20' >
+            <div className='bg-gray-100 bg-fixed   p-20' >
                 <div className="text-center mb-10">
-                    <h2 className="text-4xl font-bold mb-4 text-black gabriela-regular">What We Have To <span className='text-yellow-400'>Offer</span> ?</h2>
+                    <h2 className="text-4xl font-bold mb-4 primary gabriela-regular">What We Have To <span className='text-yellow-400'>Offer</span> ?</h2>
                     <p className="text-lg text-black gabriela-regular">Get personalized answers and ease your biggest doubts with Video Counselling from our curated experts.</p>
                 </div>
                 <div className='flex flex-wrap justify-between gap-x-2 p-6'>

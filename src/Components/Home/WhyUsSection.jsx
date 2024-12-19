@@ -35,7 +35,7 @@ const WhyUsSection = () => {
   return (
     <ScrollAnimation animateIn='backInLeft' animateOnce={true} duration={1.5} className='p-20'>
       <div className="w-full flex flex-col justify-center items-center mx-auto rounded-lg">
-        <h1 className="text-4xl font-bold mb-4 text-center">Why <span className='text-yellow-400'>Neet Advisor ?</span></h1>
+        <h1 className="text-4xl font-bold mb-4 text-center primary">Why <span className='text-yellow-400'>Neet Advisor ?</span></h1>
         <p className="text-lg font-semibold text-gray-600 mb-6 text-center">Unlock Your Success in 4 Simple Steps: NEET Counselling Guidance</p>
         <div className="flex w-full justify-center items-center gap-4">
           {/* First Collapse Section */}

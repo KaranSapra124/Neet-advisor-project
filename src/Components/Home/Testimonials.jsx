@@ -45,14 +45,14 @@ const testimonialsData = [
 
 const Testimonials = () => {
     return (
-        <section className="my-8 bg-gray-200 text-gray-100">
+        <section className="my-8 bg-gray-100 text-gray-100">
             <div className="container flex flex-col items-center mx-auto py-5 md:px-12">
-                <h1 className="p-4 text-4xl font-semibold leading-none text-center primary">What our customers are saying about us</h1>
+                <h1 className="p-4 text-4xl leading-none text-center primary font-bold">What our customers are saying about us</h1>
             </div>
-            <div className="flex flex-col ">
+            <div className="flex flex-col pb-20">
                 <ScrollAnimation animateIn='backInUp' animateOnce={true} duration={1.5}>
 
-                    <Carousel dotPosition='bottom' slidesToShow={4} autoplay autoplaySpeed={1500} arrows className='my-5'>
+                    <Carousel dotPosition='bottom' slidesToShow={4} autoplay autoplaySpeed={1500} arrows className='my-5 '>
                         {testimonialsData.map((elem) => {
                             return (
                                 // <div key={elem.id} className=''>
@@ -76,11 +76,11 @@ const TestimonialCard = ({ imgUrl, review, clientName, clientCollege }) => {
 
     return (
 
-        // <div>
 
-        <div className="my-8 mx-5 rounded-2xl shadow-lg shadow-black">
-            <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-gray-200">
-                <p className="relative px-6 py-1 text-lg italic text-center text-black">
+
+        <div className="my-8 mx-5 rounded-2xl cursor-pointer hover:scale-105 transition-all shadow-lg shadow-black">
+            <div className="px-2 py-4 rounded-t-lg sm:px-8 md:px-12 bg-gray-200">
+                <p className="relative px-6 py-1 mb-6 text-md italic text-center text-black">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 text-yellow-400">
                         <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                         <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
@@ -92,13 +92,13 @@ const TestimonialCard = ({ imgUrl, review, clientName, clientCollege }) => {
                 </p>
             </div>
             <div className="flex flex-col items-center justify-center p-8 rounded-b-lg bg-[#201169]  text-gray-200">
-                <img src={imgUrl} alt={clientName} className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full bg-gray-500 " />
-                <p className="text-xl font-semibold leading-tight">{clientName}</p>
+                <img src={imgUrl} alt={clientName} className="w-10 h-10 mb-2 -mt-12 bg-center bg-cover rounded-full bg-gray-500 " />
+                <p className="text-lg font-semibold leading-tight">{clientName}</p>
                 <p className="text-sm uppercase">{clientCollege}</p>
             </div>
 
         </div>
-        // </div>
+
     );
 };
 

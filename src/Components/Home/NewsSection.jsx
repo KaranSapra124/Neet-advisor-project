@@ -82,9 +82,9 @@ const NewsSection = () => {
 
     return (
         <>
-            <div className='p-10 flex flex-col justify-between bg-gray-200' >
+            <div className='p-10 flex flex-col justify-between bg-gray-100' >
                 <div className='flex flex-col text-center mx-5'>
-                    <h1 className='text-3xl font-bold text-center '>
+                    <h1 className='text-3xl primary font-bold text-center '>
                         Get the <span className='text-yellow-400 font-extrabold'>Latest News and Updates</span> ,  all at One place!
                     </h1>
                     <p className='py-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod veritatis ipsam harum quaerat eaque quam quibusdam dolore voluptates voluptas ratione, quisquam beatae dignissimos debitis recusandae suscipit totam qui nam! Sint.</p>

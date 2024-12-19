@@ -4,10 +4,9 @@ import { CiStar } from "react-icons/ci";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { imageArray } from '../../Utils/imagesArray';
 import { Rate } from 'antd';
+// import "./custom.css";
 
 const Hero = () => {
-
-
     // Store randomized positions in the state
     const [positions, setPositions] = useState([]);
     const [ind, setInd] = useState(0)
@@ -65,7 +64,7 @@ const Hero = () => {
                         <FcGoogle className="text-4xl mr-3" />
                         <div className="flex flex-col">
                             <div className="flex mb-2">
-                                <Rate count={5} value={5}/>
+                                <Rate count={5} value={5} />
                             </div>
                             <p className="font-bold text-lg">
                                 5/ 5 | 4406 Reviews

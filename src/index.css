@@ -256,3 +256,144 @@
 
 
 }
+
+/* Gallery */
+/* @keyframes translateImages {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-110%);
+    }
+
+
+}
+
+@keyframes translateDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(110%);
+    }
+}
+
+@keyframes transalateTop {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes transalateRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+} */
+
+/* Define keyframe animations */
+@keyframes translateDown {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes translateTop {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes translateRight {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes translateImages {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes translateImagesToRight {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* Apply animation classes */
+.animate-translateDown {
+    animation: translateDown 2s infinite linear ;
+    transition: all;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+   animation-fill-mode: forwards;
+
+}
+
+.animate-translateTop {
+    animation: translateTop 2s infinite linear;
+    transition: all;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+
+.animate-translateRight {
+    animation: translateImagesToRight 2s  infinite linear;
+    transition: all;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.animate-translateImages {
+    animation: translateImages 2s alternate-reverse infinite linear;
+    transition: all;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+/* Gallery.css */
+/* Gallery.css */
+.image-container {
+    transition: transform 0.3s ease; /* Smooth transition (optional) */
+    perspective: 1000px; /* Perspective for 3D effect (optional) */
+}
+
+/* .image-container:hover{
+    transform: scale(1.4);
+    z-index: 1;
+} */
